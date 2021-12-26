@@ -16,7 +16,7 @@ rlistToList lst =
 
 -- Реализуйте обратное преобразование
 listToRlist :: [a] -> ReverseList a
-listToRlist = notImplementedYet
+listToRlist = foldl (:<) REmpty
 
 -- Реализуйте все представленные ниже классы (см. тесты)
 instance Show (ReverseList a) where

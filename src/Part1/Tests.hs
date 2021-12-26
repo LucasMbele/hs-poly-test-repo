@@ -81,8 +81,8 @@ unit_isPrime = do
 unit_shapeArea = do
     shapeArea [(0, 0), (0, 1), (1, 1), (1, 0)] @?=~ 1
     shapeArea [(0, 0), (0, 1), (1, 1)] @?=~ 0.5
-    shapeArea [(2, 1), (4, 5), (7, 8)] @?=~ 3
-    shapeArea [(3, 4), (5, 11), (12, 8), (9, 5), (5, 6)] @?=~ 30
+    shapeArea [(2, 1), (4, 5), (7, 8)] @?=~ 3
+    shapeArea [(3, 4), (5, 11), (12, 8), (9, 5), (5, 6)] @?=~ 30
 
 prop_shapeArea (x, y) w h =
     let
