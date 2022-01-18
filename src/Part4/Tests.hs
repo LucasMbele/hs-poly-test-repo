@@ -1,6 +1,5 @@
 module Part4.Tests where
 
-
 import Test.Tasty.HUnit
 import Test.Tasty.QuickCheck
 import Part4.Tasks
