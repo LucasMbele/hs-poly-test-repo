@@ -1,7 +1,7 @@
 {-# LANGUAGE FlexibleInstances #-}
 module Part6.Tasks where
 
-import Util (notImplementedYet)
+--import Util (notImplementedYet)
 import Data.Map
 
 -- Разреженное представление матрицы. Все элементы, которых нет в sparseMatrixElements, считаются нулями
@@ -25,14 +25,14 @@ instance Matrix (SparseMatrix Int) where
 
 -- Реализуйте следующие функции
 -- Единичная матрица
-eye :: Matrix m => Int -> m
-eye w = notImplementedYet
+--eye :: Matrix m => Int -> m
+--eye w = notImplementedYet
 -- Матрица, заполненная нулями
-zero :: Matrix m => Int -> Int -> m
-zero w h = notImplementedYet
+--zero :: Matrix m => Int -> Int -> m
+--zero w h = notImplementedYet
 -- Перемножение матриц
-multiplyMatrix :: Matrix m => m -> m -> m
-multiplyMatrix = notImplementedYet
+--multiplyMatrix :: Matrix m => m -> m -> m
+--multiplyMatrix = notImplementedYet
 -- Определитель матрицы
-determinant :: Matrix m => m -> Int
-determinant = notImplementedYet
+--determinant :: Matrix m => m -> Int
+--determinant = notImplementedYet

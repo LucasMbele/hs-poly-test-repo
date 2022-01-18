@@ -12,7 +12,7 @@ fac n = if (n == 0) then 1 else n * fac (n-1)
 mySin :: Double -> Double
 sinTerm :: Double -> Integer -> Double
 mySin x = sum [sinTerm x i | i <- [1..33]]
-sinTerm x i = (x^oddTerm / fromIntegral (factorial oddTerm))*(-1)^(i-1)
+sinTerm x i = (x^oddTerm / fromIntegral (fac oddTerm))*(-1)^(i-1)
   where oddTerm = 2*i - 1
 
 

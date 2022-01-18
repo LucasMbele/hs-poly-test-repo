@@ -1,6 +1,6 @@
 module Part5.Tasks where
 
-import Util(notImplementedYet)
+--import Util(notImplementedYet)
 
 -- Реализуйте левую свёртку
 myFoldl :: (b -> a -> b) -> b -> [a] -> b

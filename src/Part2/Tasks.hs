@@ -1,6 +1,6 @@
 module Part2.Tasks where
 
-import Util(notImplementedYet)
+--import Util(notImplementedYet)
 
 data BinaryOp = Plus | Minus | Times deriving (Show, Eq)
 
@@ -24,7 +24,7 @@ infixl 2 |*|
 -- Заменить переменную `varName` на `replacement`
 -- во всём выражении `expression`
 replaceVar :: String -> Term -> Term -> Term
-replaceVar varName replacement expr =
+replaceVar varName replacement expression =
   case expression of
     Variable currentVarName -> if (currentVarName == varName) then replacement else expression
     BinaryTerm op lhv rhv -> BinaryTerm op (replaceVar varName replacement lhv) (replaceVar varName replacement rhv)
