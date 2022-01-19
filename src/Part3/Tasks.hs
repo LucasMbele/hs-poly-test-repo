@@ -15,7 +15,7 @@ ff f x = x : ff f (f x)
 
 -- Дан список чисел. Вернуть самую часто встречающуюся *цифру* в этих числах (если таковых несколько -- вернуть любую)
 mostFreq :: [Int] -> Int
-mostFreq [] = 0
+--mostFreq [] = 0
 mostFreq lst = (getMostFreqValue . findMaxFreq) getLstWithFreq
   where
     getSplitLst = splitAll lst
