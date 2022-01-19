@@ -5,7 +5,7 @@ import qualified Data.Map
 import Test.Tasty.HUnit
 import Test.Tasty.QuickCheck
 import Part6.Tasks
-{-
+
 unit_eye = do
     eye 1 @?= one
     eye 1 @?= [[one]]
@@ -22,4 +22,4 @@ unit_zero = do
     zero 5 5 @?= SparseMatrix 5 5 (Data.Map.fromList ([]::[((Int, Int), Int)]))
     where zz :: Int; zz = 0
 
--}
+
