@@ -1,7 +1,7 @@
 module Part3.Tasks where
 import Data.List (group, sort)
 import Data.Function (on)
---import Util (notImplementedYet)
+import Util (notImplementedYet)
 
 
 -- Функция finc принимает на вход функцию f и число n и возвращает список чисел [f(n), f(n + 1), ...]
@@ -15,7 +15,6 @@ ff f x = x : ff f (f x)
 
 -- Дан список чисел. Вернуть самую часто встречающуюся *цифру* в этих числах (если таковых несколько -- вернуть любую)
 mostFreq :: [Int] -> Int
-mostFreq [] = 0
 mostFreq lst = (getMostFreqValue . findMaxFreq) getLstWithFreq
   where
     getSplitLst = splitAll lst

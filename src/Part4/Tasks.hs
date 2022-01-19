@@ -1,6 +1,6 @@
 module Part4.Tasks where
 
---import Util(notImplementedYet)
+import Util(notImplementedYet)
 
 -- Перевёрнутый связный список -- хранит ссылку не на последующию, а на предыдущую ячейку
 data ReverseList a = REmpty | (ReverseList a) :< a
@@ -20,11 +20,11 @@ listToRlist = foldl (:<) REmpty
 
 -- Реализуйте все представленные ниже классы (см. тесты)
 instance Show (ReverseList a) where
-    --showsPrec = notImplementedYet
-    --show = notImplementedYet
+    showsPrec = notImplementedYet
+    show = notImplementedYet
 instance Eq (ReverseList a) where
-    --(==) = notImplementedYet
-    --(/=) = notImplementedYet
+    (==) = notImplementedYet
+    (/=) = notImplementedYet
 instance Semigroup (ReverseList a) where
 instance Monoid (ReverseList a) where
 instance Functor ReverseList where

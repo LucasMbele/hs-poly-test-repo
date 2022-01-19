@@ -2,7 +2,7 @@ module Part1.Tasks where
 
 import Data.Fixed
 import Data.List
---import Util(notImplementedYet)
+import Util(notImplementedYet)
 
 fac :: Integer -> Integer
 fac n = if (n == 0) then 1 else n * fac (n-1)
